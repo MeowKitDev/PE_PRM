@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PE</string>
+    <string name="welcome_messages">Hello, %1$s! You have &lt;b>%2$d new messages&lt;/b>.</string>
+</resources>

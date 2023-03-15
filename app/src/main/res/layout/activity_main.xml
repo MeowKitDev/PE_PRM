@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnAdd"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="20dp"-->
+    <!--        android:background="#BB2649"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:drawablePadding="-15dp"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_add_24"-->
+    <!--        android:onClick="addProduct"-->
+    <!--        android:text="Add Clock" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Clock"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Enter Clock Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Price:"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Enter Price"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF018786"
+            android:onClick="addData"
+            android:padding="10dp"
+            android:text="Create Clock"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FF018786"
+        android:drawableLeft="@drawable/ic_baseline_restore_from_trash_24"
+        android:drawablePadding="-16dp"
+        android:onClick="deleteProduct"
+        android:padding="10dp"
+        android:text="Delete Clock"
+        android:textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FF018786"
+        android:drawableLeft="@drawable/ic_baseline_update_24"
+        android:drawablePadding="-16dp"
+        android:onClick="updateProduct"
+        android:padding="10dp"
+        android:text="Update Clock"
+        android:textColor="#FFFFFF" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtColumnName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="2dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="All Clocks"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:id="@+id/txtData"-->
+<!--            android:textSize="15dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="All Items"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/my_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#EEEEEE"
+        android:padding="16dp"
+        android:stretchColumns="*"></TableLayout>
+
+</LinearLayout>
